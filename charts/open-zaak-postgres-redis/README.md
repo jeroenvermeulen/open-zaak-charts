@@ -10,14 +10,14 @@ The Helm chart installs Open Zaak and by the following dependencies using subcha
 First configure the Helm repository:
 
 ```bash
-helm repo add fundaments-open-zaak https://fundaments.github.io/open-zaak-charts/
+helm repo add jeroenvermeulen-open-zaak https://jeroenvermeulen.github.io/open-zaak-charts/
 helm repo update
 ```
 
 Install the Helm chart with:
 
 ```bash
-helm install open-zaak fundaments-open-zaak/open-zaak-postgres-redis \
+helm install open-zaak jeroenvermeulen-open-zaak/open-zaak-postgres-redis \
     --set "open-zaak.settings.allowedHosts=open-zaak.gemeente.nl" \
     --set "open-zaak.ingress.enabled=true" \
     --set "open-zaak.ingress.hosts={open-zaak.gemeente.nl}"
