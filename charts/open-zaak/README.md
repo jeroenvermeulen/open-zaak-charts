@@ -8,14 +8,14 @@ If you would like to install PostgreSQL and Redis in one go, use the [open-zaak-
 First configure the Helm repository:
 
 ```bash
-helm repo add open-zaak https://open-zaak.github.io/charts/
+helm repo add fundaments-open-zaak https://fundaments.github.io/open-zaak-charts/
 helm repo update
 ```
 
 Install the Helm chart with:
 
 ```bash
-helm install open-zaak open-zaak/open-zaak \
+helm install open-zaak fundaments-open-zaak/open-zaak \
     --set "settings.allowedHosts=open-zaak.gemeente.nl" \
     --set "settings.database.host=postgres.gemeente.nl" \
     --set "settings.cache.default=redis.gemeente.nl:6379/0" \
