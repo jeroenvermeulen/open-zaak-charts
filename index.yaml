@@ -219,7 +219,7 @@ entries:
     type: application
     urls:
     - https://github.com/jeroenvermeulen/open-zaak-charts/releases/download/open-zaak-0.8.1/open-zaak-0.8.1.tgz
-    version: 0.8.1  
+    version: 0.8.1
   - apiVersion: v2
     appVersion: 1.6.0
     created: "2022-04-11T07:34:44.501803248Z"
@@ -430,4 +430,30 @@ entries:
     urls:
     - https://github.com/open-zaak/charts/releases/download/open-zaak-0.2.0/open-zaak-0.2.0.tgz
     version: 0.2.0
+  open-zaak-postgres-redis:
+  - apiVersion: v2
+    created: "2024-06-12T16:28:02.542033371Z"
+    dependencies:
+    - name: open-zaak
+      repository: file://../open-zaak
+      tags:
+      - open-zaak
+      version: ~0.8.1
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - postgresql
+      version: ~15.5.5
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - redis
+      version: ~19.5.2
+    description: Productiewaardige API's voor Zaakgericht Werken
+    digest: a669fb40e4db76b2a65cdac458d9673aaf625e5ce38b58ca33f49d25ed1a2d29
+    name: open-zaak-postgres-redis
+    type: application
+    urls:
+    - https://github.com/jeroenvermeulen/open-zaak-charts/releases/download/open-zaak-postgres-redis-0.8.1/open-zaak-postgres-redis-0.8.1.tgz
+    version: 0.8.1
 generated: "2024-06-12T15:58:20.512028671Z"
