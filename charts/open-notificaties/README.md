@@ -11,14 +11,14 @@ The Helm chart installs Open Notificaties and by default the following dependenc
 First configure the Helm repository:
 
 ```bash
-helm repo add open-zaak https://open-zaak.github.io/charts/
+helm repo add jeroenvermeulen-open-zaak https://jeroenvermeulen.github.io/open-zaak-charts/
 helm repo update
 ```
 
 Install the Helm chart with:
 
 ```bash
-helm install open-notificaties open-zaak/open-notificaties \
+helm install open-notificaties jeroenvermeulen-open-zaak/open-notificaties \
     --set "settings.allowedHosts=open-notificaties.gemeente.nl" \
     --set "ingress.enabled=true" \
     --set "ingress.hosts={open-notificaties.gemeente.nl}"
