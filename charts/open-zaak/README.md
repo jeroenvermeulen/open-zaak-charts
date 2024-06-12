@@ -8,7 +8,7 @@ If you would like to install PostgreSQL and Redis in one go, use the [open-zaak-
 First configure the Helm repository:
 
 ```bash
-helm repo add fundaments-open-zaak https://fundaments.github.io/open-zaak-charts/
+helm repo add fundaments-open-zaak https://jeroenvermeulen.github.io/open-zaak-charts/
 helm repo update
 ```
 
